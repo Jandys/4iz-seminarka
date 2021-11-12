@@ -1,0 +1,84 @@
+.circle{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    border-radius: 50%;
+    left: 80%;
+    top: 80%;
+    transform: translate(-50%,-50%);
+
+}
+
+.transition{
+    transition: top, left;
+    animation: zoommove 2s forwards ease-in-out ;
+    
+}
+
+@keyframes zoommove {
+    30%{
+        top: 50%;
+        left: 50%;
+        width: 100px;
+        height: 100px;
+    }
+    100%{
+        top: 50%;
+        left: 50%;
+        width: 3000%;
+        height: 3000%;
+    }
+    
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.squere{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    background-color: orange;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+}
+
+.squn{
+    animation: unzoom 2s forwards ease-in-out ;
+}
+
+@keyframes unzoom{
+    60%{
+        width: 100px;
+        height: 100px;
+        top: 50%;
+        left: 50%;
+    }
+    100%{
+        top:80%;
+        left:80%;
+        translate: rotateX(90);
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+.newSquere{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    background-color: orange;
+    transform: translate(-50%,-50%);
+    top:80%;
+    left:80%;
+    translate: rotateX(90);
+    width: 100px;
+    height: 100px;
+}

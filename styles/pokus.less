@@ -1,0 +1,42 @@
+@progresy: {
+    95: red;
+    90: blue;
+    80: green;
+    70: yellow;
+    50: orange;
+    45: brown;
+    20: purple;
+}
+@progresyP:95%,90%,80%,70%,50%,45%,20%;
+
+.centerH(){
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.backgroundImage{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-bottom: 0;
+    width: 120%;
+    padding: 0;
+    content: url("images/header.jpg");
+    z-index: -5;
+    opacity: 0.95;
+}
+
+h1, h4{
+    .centerH();
+}
+
+
+each(@progresy,{
+    .p@{key}{
+        border-radius: inherit;
+        width: extract(@progresyP,@index);
+        background-color: @value;
+    }
+})

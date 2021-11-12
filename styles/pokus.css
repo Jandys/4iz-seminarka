@@ -1,0 +1,52 @@
+.backgroundImage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-bottom: 0;
+  width: 120%;
+  padding: 0;
+  content: url("images/header.jpg");
+  z-index: -5;
+  opacity: 0.95;
+}
+h1,
+h4 {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.p95 {
+  border-radius: inherit;
+  width: 95%;
+  background-color: red;
+}
+.p90 {
+  border-radius: inherit;
+  width: 90%;
+  background-color: blue;
+}
+.p80 {
+  border-radius: inherit;
+  width: 80%;
+  background-color: green;
+}
+.p70 {
+  border-radius: inherit;
+  width: 70%;
+  background-color: yellow;
+}
+.p50 {
+  border-radius: inherit;
+  width: 50%;
+  background-color: orange;
+}
+.p45 {
+  border-radius: inherit;
+  width: 45%;
+  background-color: brown;
+}
+.p20 {
+  border-radius: inherit;
+  width: 20%;
+  background-color: purple;
+}

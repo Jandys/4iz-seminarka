@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="transition.css">
+    <title>squere</title>
+
+</head>
+<body>
+    <!-- <div class="preloader"></div> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <div class="squere" id="squ"></div>
+    <button id="action">Click!</buton>
+
+    <script>
+
+
+
+    
+        $(document).ready(function(){
+            let squere = document.getElementById("squ");
+            appendAtribute(squere, "class", "squn");
+
+            document.getElementById("action").addEventListener(
+                "click", function(){
+                let circle = document.getElementById("squ");
+                circle.setAttribute("class", "newSquere");
+                appendAtribute(circle, "class", "transition");
+                setTimeout(function(){
+                    window.location.href= "http://127.0.0.1:5500/transition/transition.html";
+                },1800);
+            }
+            )
+        });
+
+        function appendAtribute(element, attribute, value){    
+            currentAtributres = element.getAttribute(attribute);
+            console.log(currentAtributres + ' ' + value);
+            element.setAttribute(attribute, currentAtributres+" "+value);
+        }
+    </script>
+</body>
+</html>
